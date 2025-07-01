@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>ZAKITA Skincare - Solusi Kulit Sehat & Bercahaya</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+    body {
+      font-family: 'Poppins', sans-serif;
+    }
+    .gradient-bg {
+      background: linear-gradient(135deg, #F0FDF4 0%, #D1FAE5 100%);
+    }
+  </style>
+</head>
+<body class="bg-stone-50 text-stone-800">
+
+  <header class="sticky top-0 z-50 bg-white/90 backdrop-blur-lg shadow-sm">
+    <div class="max-w-7xl mx-auto flex justify-between items-center p-4">
+      <a href="#home" class="text-teal-700 font-bold text-2xl">
+        ZAKITA
+      </a>
+
+      <nav class="hidden md:flex space-x-8 text-sm font-medium text-stone-600">
+        <a href="#home" class="hover:text-teal-600 transition duration-300">Home</a>
+        <a href="#about" class="hover:text-teal-600 transition duration-300">About</a>
+        <a href="#produk" class="hover:text-teal-600 transition duration-300">Product</a>
+        <a href="#blog" class="hover:text-teal-600 transition duration-300">Blog</a>
+        <a href="#kontak" class="hover:text-teal-600 transition duration-300">Contact</a>
+      </nav>
+      <a href="#produk" class="hidden md:inline-block bg-teal-600 hover:bg-teal-700 text-white px-5 py-2 rounded-full font-semibold text-sm transition duration-300 transform hover:scale-105">
+          Shop Now
+      </a>
+      
+      <div class="md:hidden">
+        <button id="menu-btn" class="text-teal-700 focus:outline-none">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+          </svg>
+        </button>
+      </div>
+    </div>
+
+    <div id="mobile-menu" class="hidden md:hidden">
+      <nav class="flex flex-col items-center space-y-4 p-4 border-t">
+        <a href="#home" class="hover:text-teal-600">Home</a>
+        <a href="#about" class="hover:text-teal-600">About</a>
+        <a href="#produk" class="hover:text-teal-600">Product</a>
+        <a href="#blog" class="hover:text-teal-600">Blog</a>
+        <a href="#kontak" class="hover:text-teal-600">Contact</a>
+        <a href="#produk" class="w-full text-center mt-2 bg-teal-600 hover:bg-teal-700 text-white px-5 py-2 rounded-full font-semibold text-sm">
+            Shop Now
+        </a>
+      </nav>
+    </div>
+  </header>
+
+  <section id="home" class="gradient-bg">
+    <div class="max-w-7xl mx-auto flex flex-col-reverse md:flex-row items-center px-6 pt-12 pb-20 md:py-20">
+      
+      <div class="md:w-1/2 space-y-5 text-center md:text-left mt-8 md:mt-0">
+        <h5 class="uppercase text-sm font-bold text-teal-600 tracking-wider">SOLUSI PERAWATAN KULIT ANDA</h5>
+        <h1 class="text-4xl md:text-5xl font-extrabold text-stone-900 leading-tight">
+          Kulit Sehat, Cerah, dan Terlindungi <br>
+          <span class="text-teal-600">bersama Hanasui</span>
+        </h1>
+        <p class="text-stone-600 text-base leading-relaxed max-w-lg mx-auto md:mx-0">
+            Hanasui adalah solusi skincare terbaik untuk kulit berjerawat. Diformulasikan dengan bahan aktif alami pilihan seperti <em>tea tree oil</em>, <em>niacinamide</em>, dan <em>centella asiatica</em> untuk hasil maksimal.
+        </p>
+        <a href="#produk" class="inline-block bg-teal-600 hover:bg-teal-700 text-white px-8 py-3 rounded-full font-semibold text-lg transition duration-300 transform hover:scale-105 shadow-lg">
+          Lihat Koleksi Produk
+        </a>
+      </div>
+
+      <div class="md:w-1/2 mb-10 md:mb-0">
+        <img src="img/ppp.png" alt="Wanita menggunakan skincare ZAKITA" class="w-full max-w-md mx-auto rounded-lg" />
+      </div>
+    </div>
+  </section>
+
+  <section id="about" class="py-20 md:py-24 bg-white">
+      <div class="max-w-6xl mx-auto flex flex-col md:flex-row items-center gap-12 px-6">
+          <div class="w-full md:w-1/2">
+              <img src="img/w.jpg" alt="Produk Hanasui" class="rounded-2xl shadow-2xl w-full h-auto object-cover transform hover:scale-105 transition-transform duration-500">
+          </div>
+          <div class="w-full md:w-1/2">
+            <h2 class="text-teal-600 font-semibold tracking-widest mb-2">TENTANG HANASUI</h2>
+            <h3 class="text-3xl font-bold mb-4 text-stone-900">Perawatan Tepat dari Akar Masalah Jerawat</h3>
+            <p class="mb-4 text-stone-600 leading-relaxed">
+                <strong>Hanasui</strong> adalah solusi perawatan kulit untuk masalah jerawat dari akar permasalahan.
+            </p>
+            <p class="mb-4 text-stone-600 leading-relaxed">
+                Mengandung <em>tea tree oil</em>, <em>niacinamide</em>, dan <em>centella asiatica</em> yang terbukti efektif meredakan peradangan dan mempercepat regenerasi kulit.
+            </p>
+            <p class="mb-4 text-stone-600 leading-relaxed">
+                Produk kami <strong>cruelty-free</strong> dan telah teruji aman untuk semua jenis kulit, termasuk kulit sensitif.
+            </p>
+            <p class="font-semibold text-teal-800">
+                Jadikan HANASUI bagian dari rutinitas harianmu untuk kulit sehat impian!
+            </p>
+          </div>
+      </div>
+  </section>
+
+  <section id="produk" class="py-20 gradient-bg">
+    <div class="text-center mb-12 px-4">
+      <h2 class="text-3xl font-bold text-teal-800">ZAKITA Best Seller</h2>
+      <p class="text-stone-600 mt-2">Produk paling dicari oleh pelanggan kami.</p>
+    </div>
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 px-6 max-w-7xl mx-auto">
+      <div class="bg-white rounded-2xl shadow-lg p-6 flex flex-col items-center text-center transform hover:-translate-y-2 transition-transform duration-300">
+        <img src="img/facewash.png" alt="Hanasui Facewash" class="h-44 object-contain mb-4">
+        <h3 class="text-xl font-semibold mb-2">Facewash</h3>
+        <p class="text-gray-500 mb-4 text-sm flex-grow">Membersihkan dan melawan jerawat dengan lembut.</p>
+        <a href="https://s.shopee.co.id/5VJzoZ74Yz" class="w-full bg-teal-500 text-white px-4 py-2 rounded-lg font-semibold hover:bg-teal-600 transition-colors duration-300">Beli Sekarang</a>
+      </div>
+      <div class="bg-white rounded-2xl shadow-lg p-6 flex flex-col items-center text-center transform hover:-translate-y-2 transition-transform duration-300">
+        <img src="img/Serum.png" alt="Hanasui Serum" class="h-44 object-contain mb-4">
+        <h3 class="text-xl font-semibold mb-2">Anti-Acne Serum</h3>
+        <p class="text-gray-500 mb-4 text-sm flex-grow">Fokus mengatasi jerawat dan mencegahnya datang kembali.</p>
+        <a href="https://s.shopee.co.id/1BB0eAGoAi" class="w-full bg-teal-500 text-white px-4 py-2 rounded-lg font-semibold hover:bg-teal-600 transition-colors duration-300">Beli Sekarang</a>
+      </div>
+      <div class="bg-white rounded-2xl shadow-lg p-6 flex flex-col items-center text-center transform hover:-translate-y-2 transition-transform duration-300">
+        <img src="img/mousturizer.png" alt="Hanasui Moisturizer" class="h-44 object-contain mb-4">
+        <h3 class="text-xl font-semibold mb-2">Moisturizer</h3>
+        <p class="text-gray-500 mb-4 text-sm flex-grow">Melembapkan tanpa rasa berat dan menjaga keseimbangan kulit.</p>
+        <a href="https://s.shopee.co.id/4fkspABcSz" class="w-full bg-teal-500 text-white px-4 py-2 rounded-lg font-semibold hover:bg-teal-600 transition-colors duration-300">Beli Sekarang</a>
+      </div>
+      <div class="bg-white rounded-2xl shadow-lg p-6 flex flex-col items-center text-center transform hover:-translate-y-2 transition-transform duration-300">
+        <img src="img/sunscreen.png" alt="Hanasui Sunscreen" class="h-44 object-contain mb-4">
+        <h3 class="text-xl font-semibold mb-2">Sunscreen</h3>
+        <p class="text-gray-500 mb-4 text-sm flex-grow">Melindungi dari sinar UV tanpa menyumbat pori-pori.</p>
+        <a href="https://s.shopee.co.id/6VCX0GxUYZ" class="w-full bg-teal-500 text-white px-4 py-2 rounded-lg font-semibold hover:bg-teal-600 transition-colors duration-300">Beli Sekarang</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="blog" class="py-20 bg-white">
+    <div class="text-center mb-12 px-4">
+      <h2 class="text-3xl font-bold text-teal-800">Tips & Artikel Kesehatan Kulit</h2>
+      <p class="text-stone-600 mt-2">Dapatkan wawasan terbaru seputar perawatan kulit.</p>
+    </div>
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 px-6 max-w-7xl mx-auto">
+      <div class="bg-emerald-50 rounded-xl overflow-hidden shadow-lg group">
+        <img src="img/pre.png" alt="Wanita dengan kulit berjerawat" class="w-full h-56 object-cover transform group-hover:scale-110 transition-transform duration-500">
+        <div class="p-6">
+          <h3 class="text-teal-800 font-semibold text-lg mb-2">Cara Efektif Merawat Kulit Berjerawat</h3>
+          <p class="text-stone-600 text-sm mb-4">Pahami penyebab jerawat dan bagaimana mengatasinya dengan rutinitas yang tepat untuk kulit yang lebih bersih dan sehat.</p>
+          <a href="#" class="text-teal-600 font-bold text-sm group-hover:underline">Baca Selengkapnya →</a>
+        </div>
+      </div>
+      <div class="bg-emerald-50 rounded-xl overflow-hidden shadow-lg group">
+        <img src="img/oio.png" alt="Serum Niacinamide" class="w-full h-56 object-cover transform group-hover:scale-110 transition-transform duration-500">
+        <div class="p-6">
+          <h3 class="text-teal-800 font-semibold text-lg mb-2">Segudang Manfaat Niacinamide untuk Kulit</h3>
+          <p class="text-stone-600 text-sm mb-4">Niacinamide efektif untuk mencerahkan kulit, melembapkan, dan menyamarkan noda bekas jerawat.</p>
+          <a href="#" class="text-teal-600 font-bold text-sm group-hover:underline">Baca Selengkapnya →</a>
+        </div>
+      </div>
+      <div class="bg-emerald-50 rounded-xl overflow-hidden shadow-lg group">
+        <img src="img/pho.png" alt="Wanita memakai sunscreen" class="w-full h-56 object-cover transform group-hover:scale-110 transition-transform duration-500">
+        <div class="p-6">
+          <h3 class="text-teal-800 font-semibold text-lg mb-2">Mengapa Sunscreen Adalah Langkah Wajib?</h3>
+          <p class="text-stone-600 text-sm mb-4">Paparan sinar UV bisa memperparah kondisi kulit. Sunscreen adalah pelindung utama Anda setiap hari.</p>
+          <a href="#" class="text-teal-600 font-bold text-sm group-hover:underline">Baca Selengkapnya →</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="kontak" class="max-w-6xl mx-auto my-20 bg-white rounded-2xl shadow-2xl flex flex-col md:flex-row overflow-hidden">
+    <div class="md:w-1/2 bg-teal-600 text-white p-8 md:p-10 flex flex-col justify-between">
+      <div>
+        <h2 class="text-2xl md:text-3xl font-bold mb-4">Informasi Kontak</h2>
+        <p class="mb-8 opacity-90">Ada pertanyaan atau butuh konsultasi? Jangan ragu untuk menghubungi kami!</p>
+        <ul class="space-y-4">
+          <li class="flex items-center gap-3">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" /></svg>
+              <span>+62 899 9880 679</span>
+          </li>
+          <li class="flex items-center gap-3">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" /></svg>
+              <span>zakitaskincare@gmail.com</span>
+          </li>
+          <li class="flex items-start gap-3">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" /><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" /></svg>
+              <span>Perumahan Telang Puri JL. Telang Kec. Kamal Kab. Bangkalan</span>
+          </li>
+        </ul>
+      </div>
+      <div class="flex space-x-4 mt-8 text-2xl">
+        <a href="https://www.instagram.com/zakita_skincare?igsh=MWV5Njd0Y3JpN3FpaQ==" class="hover:opacity-80 transition-opacity"><img src="https://img.icons8.com/ios-filled/30/ffffff/instagram-new.png" alt="instagram"/></a>
+        <a href="https://wa.me/qr/7EOWONMFCYEML1" class="hover:opacity-80 transition-opacity"><img src="https://img.icons8.com/ios-filled/30/ffffff/whatsapp.png" alt="whatsapp"/></a>
+        <a href="#" class="hover:opacity-80 transition-opacity"><img src="https://img.icons8.com/ios-filled/30/ffffff/shop.png" alt="shopee"/></a>
+      </div>
+    </div>
+    <div class="md:w-1/2 p-8 md:p-10 bg-gray-50">
+      <h2 class="text-2xl md:text-3xl font-bold text-teal-600 mb-6">Hubungi Kami</h2>
+      <form class="space-y-5">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+          <input type="text" placeholder="Nama Depan" class="w-full bg-white border border-gray-300 p-3 rounded-lg focus:outline-none focus:ring-2 focus:ring-teal-400 transition"/>
+          <input type="text" placeholder="Nama Belakang" class="w-full bg-white border border-gray-300 p-3 rounded-lg focus:outline-none focus:ring-2 focus:ring-teal-400 transition"/>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+          <input type="email" placeholder="Alamat Email" class="w-full bg-white border border-gray-300 p-3 rounded-lg focus:outline-none focus:ring-2 focus:ring-teal-400 transition"/>
+          <input type="tel" placeholder="Nomor Telepon" class="w-full bg-white border border-gray-300 p-3 rounded-lg focus:outline-none focus:ring-2 focus:ring-teal-400 transition"/>
+        </div>
+        <div>
+          <p class="font-medium mb-2 text-stone-700">Pilih Subjek:</p>
+          <div class="flex flex-wrap gap-x-4 gap-y-2 text-sm">
+            <label class="flex items-center gap-2"><input type="radio" name="subject" class="text-teal-600 focus:ring-teal-400" checked> Pertanyaan Umum</label>
+            <label class="flex items-center gap-2"><input type="radio" name="subject" class="text-teal-600 focus:ring-teal-400"> Pemesanan</label>
+            <label class="flex items-center gap-2"><input type="radio" name="subject" class="text-teal-600 focus:ring-teal-400"> Komplain</label>
+          </div>
+        </div>
+        <textarea rows="4" placeholder="Tulis pesan Anda di sini..." class="w-full bg-white border border-gray-300 p-3 rounded-lg focus:outline-none focus:ring-2 focus:ring-teal-400 transition"></textarea>
+        <button type="submit" class="w-full bg-teal-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-teal-700 transition-colors duration-300 shadow-md">Kirim Pesan</button>
+      </form>
+    </div>
+  </section>
+
+  <footer class="text-center py-6 bg-emerald-100">
+    <p class="text-sm text-teal-800">&copy; 2025 ZAKITA Skincare. All rights reserved.</p>
+  </footer>
+
+  <script>
+    const menuBtn = document.getElementById('menu-btn');
+    const mobileMenu = document.getElementById('mobile-menu');
+
+    menuBtn.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+    });
+  </script>
+
+</body>
+</html>
